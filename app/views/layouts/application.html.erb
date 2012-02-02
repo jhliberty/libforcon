@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js lt-ie9" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--> <html lang="en"> <!--<![endif]-->
+
+<head>
+  <meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width" />
+	
+  <title>Liberty</title>
+  
+  <%= stylesheet_link_tag    "application", :media => "all" %>
+  <%= javascript_include_tag "application" %>
+  <%= csrf_meta_tags %>
+  
+  <!--[if lt IE 9]>
+		<link rel="stylesheet" href="stylesheets/ie.css">
+	<![endif]-->
+
+
+	<!-- IE Fix for HTML5 Tags -->
+	<!--[if lt IE 9]>
+		<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+	
+</head>
+<body>
+  
+  <div class="topbar">
+    <div class="headerimage">
+      <div class="cont">
+        <div id="logo" class="brand">John-Henry Liberty</div>
+      </div><!-- .container -->        
+    </div><!-- .fill -->
+  </div><!-- .topbar -->
+  
+  <!-- container -->
+	<div class="container">
+    <div class="contentwrapper">
+		  <div class="row">
+  			<div class="twelve columns">
+          <nav>
+            <ul class="nav-bar">
+              <li><a href="#" class="main">About</a></li>
+              <li><a href="#" class="main">Issues</a></li>
+              <li><a href="#" class="main">Volunteer</a></li>
+              <li><a href="#" class="main">Blog</a></li>
+              <li><a href="#" class="main">Contact</a></li>
+            </ul>
+          </nav>
+  				<hr />
+  			</div>
+  		</div>
+
+  <%= yield %>
+    </div> <!-- .contentwrapper -->
+  </div> <!-- .container -->
+
+  <footer>
+    <p>John-Henry Liberty for Congress '12</p>
+  </footer>
+
+</body>
+</html>

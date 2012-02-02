@@ -1,0 +1,70 @@
+// Place all the styles related to the pages controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+/* Foundation v2.1.5 http://foundation.zurb.com */
+/* Artfully masterminded by ZURB  */
+
+body{
+  padding-top:160px;
+}
+.contentwrapper{
+  width:960px;
+  margin:0 auto;
+  padding:0 15px;
+  padding-top:10px;
+  background-color:#f0f0f0;
+  // background-color:#f5f5f5;
+}
+.topbar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 10000;
+  overflow: visible;
+}
+.headerimage{
+  background-image:url("/assets/headerbg.jpg");
+  background-repeat:repeat-x;
+  height:160px;
+  -webkit-box-shadow: 0 3px 3px rgba(0, 0, 0, 0.25), inset 0 -1px 0 rgba(0, 0, 0, 0.1);   
+  -moz-box-shadow: 0 3px 3px rgba(0, 0, 0, 0.25), inset 0 -1px 0 rgba(0, 0, 0, 0.1);   
+  box-shadow: 0 3px 2px rgba(0, 0, 0, 0.25), inset 0 -1px 0 rgba(0, 0, 0, 0.1);
+}
+
+#logo {
+  width: 960px;
+  margin:0 auto;
+  text-align:center;
+  height:150px;
+  text-indent:-9999px;
+  background-image:url("/assets/header.jpg");
+  padding-bottom:5px;
+}
+.nav-bar{
+  padding-left:25%;
+}
+.nav-bar>li:first-child{
+  border-left: 1px solid #ddd;
+}
+footer {
+  margin:0 auto;
+  text-align:center;
+  background-color: #222;
+  background-color: #222222;
+  background-repeat: repeat-x;
+  background-image: -khtml-gradient(linear, left top, left bottom, from(#333333), to(#222222));
+  background-image: -moz-linear-gradient(top, #333333, #222222);
+  background-image: -ms-linear-gradient(top, #333333, #222222);
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #333333), color-stop(100%, #222222));
+  background-image: -webkit-linear-gradient(top, #333333, #222222);
+  background-image: -o-linear-gradient(top, #333333, #222222);
+  background-image: linear-gradient(top, #333333, #222222);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#333333', endColorstr='#222222', GradientType=0);
+  -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.25), inset 0 -1px 0 rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.25), inset 0 -1px 0 rgba(0, 0, 0, 0.1);
+  box-shadow: 0 3px 3px rgba(0, 0, 0, 0.25), inset 0 -1px 0 rgba(0, 0, 0, 0.1);
+  color:white;
+  height:200px;
+}
+
