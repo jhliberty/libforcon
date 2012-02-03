@@ -6,8 +6,5 @@ class PostsController < ApplicationController
 
   def show
     @post = Post.find_by_permalink(params[:id])
-  end
-
-  def edit
-  end
+  end  
 end

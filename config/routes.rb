@@ -1,7 +1,7 @@
 Liberty::Application.routes.draw do
   
   scope "/blog" do
-    resources :posts
+    resources :posts, :only => [:index, :show]
   end
   match "/blog", :to => "posts#index", :as => "blog"
   
