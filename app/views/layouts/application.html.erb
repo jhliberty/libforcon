@@ -45,7 +45,7 @@
               <li><a href="#" class="main">About</a></li>
               <li><a href="#" class="main">Issues</a></li>
               <li><a href="#" class="main">Volunteer</a></li>
-              <li><a href="#" class="main">Blog</a></li>
+              <li><%= link_to "Blog", blog_path, :class => "main" %></li>
               <li><a href="#" class="main">Contact</a></li>
             </ul>
           </nav>
@@ -54,6 +54,7 @@
   		</div>
 
   <%= yield %>
+  <%= debug(params) if Rails.env.development? %>
     </div> <!-- .contentwrapper -->
   </div> <!-- .container -->
 

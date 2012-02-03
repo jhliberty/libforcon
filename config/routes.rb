@@ -1,5 +1,8 @@
 Liberty::Application.routes.draw do
-  get "pages/index"
+  
+  resources :posts
+  
+  match "/blog", :to => "posts#index", :as => "blog"
   
   root :to => "pages#index"
 
