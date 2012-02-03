@@ -1,0 +1,11 @@
+<div class="row">
+  <div id="blog-content" class="seven columns panel">
+    <% @posts.each do |post| %>
+      <h2><%= link_to post.title, post_path(post) %></h2>
+      <p>
+        <%= post.body %>
+      </p>
+    <% end %>
+  </div>
+  <%= render :partial => "sidebar" %>
+</div>
