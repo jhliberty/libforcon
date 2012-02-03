@@ -7,7 +7,7 @@ $('input, textarea').placeholder();
 // Yes
      $(window).load(function() {
          $('#featured').orbit({
-           timer: true,
+           timer: false,
            captions: true, 	
            bullets: true
          });
