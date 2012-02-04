@@ -1,6 +1,9 @@
 Liberty::Application.routes.draw do
   
-  get "volunteers/new"
+  get "contacts/new"
+  
+  match "/contact", :to => "contacts#new", :as => "contact"
+  resources :contacts, :only => [:new, :create]
   
   
   match "/volunteer", :to => "volunteers#new", :as => "volunteer"
