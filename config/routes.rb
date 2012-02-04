@@ -1,12 +1,13 @@
 Liberty::Application.routes.draw do
   
-  get "contacts/new"
   
+  match "/about", :to => "pages#about", :as => "about"
+  match "issues", :to => "pages#issues"
   match "/contact", :to => "contacts#new", :as => "contact"
-  resources :contacts, :only => [:new, :create]
-  
-  
   match "/volunteer", :to => "volunteers#new", :as => "volunteer"
+  match "/blog", :to => "posts#index", :as => "blog"  
+   
+  resources :contacts, :only => [:new, :create]
   resources :volunteers, :only => [:new, :create]
   
   scope "/blog" do
@@ -16,8 +17,6 @@ Liberty::Application.routes.draw do
   scope "/admin" do 
     resources :posts, :only => [:edit, :update, :create, :new]
   end
-  
-  match "/blog", :to => "posts#index", :as => "blog"
   
   root :to => "pages#index"
 
