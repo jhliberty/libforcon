@@ -1,0 +1,20 @@
+<div class="row">
+  <div id="blog-content" class="seven columns panel">
+    <h2>Volunteer for Liberty</h2>
+    <%= simple_form_for @volunteer do |f| %>
+      <%= f.input :first_name %>
+      <%= f.input :last_name %>
+      <%= f.input :email %>
+      <%= f.input :street_address %>
+      <%= f.input :city %>
+      <%= f.input :state %>
+      <%= f.input :zip %>
+      <%= f.input :phone %>
+      <%= f.input :txt_updates %>
+      <%= f.input :door %>
+      <%= f.input :party %>
+      <%= f.button :submit, "For Liberty!", :class => "nice" %>
+    <% end %>
+  </div>
+  <%= render :partial => "posts/sidebar" %>
+</div>
