@@ -41,6 +41,7 @@
 		  <div class="row">
   			<div class="twelve columns">
           <nav>
+            <%= link_to "Stay Informed", "#", :id => "informed", :class => "nice medium radius blue button" %>
             <ul class="nav-bar">
               <li><%= link_to "Home", root_path, :class => "main" %></li>
               <li><%= link_to "About", about_path, :class => "main" %></li>
@@ -49,6 +50,7 @@
               <li><%= link_to "Blog", blog_path, :class => "main" %></li>
               <li><%= link_to "Contact", contact_path, :class => "main" %></li>
             </ul>
+            <%= link_to "Contribute", "#", :id => "contribute", :class => "nice medium radius red button" %>
           </nav>
   				<hr />
   			</div>
