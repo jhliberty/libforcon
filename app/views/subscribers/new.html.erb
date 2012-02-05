@@ -1,0 +1,12 @@
+<div class="row">
+  <div id="blog-content" class="seven columns panel">
+    <h2>Stay Informed</h2>
+    <%= simple_form_for @subscriber do |f| %>
+      <%= f.input :email %>
+      <%= f.input :name %>
+      <%= f.input :zip %>
+      <%= f.button :submit, "Subscribe" %>
+    <% end %>
+  </div>
+  <%= render :partial => "/posts/sidebar" %>
+</div>
