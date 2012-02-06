@@ -11,6 +11,8 @@ Liberty::Application.routes.draw do
   resources :contacts, :only => [:new, :create]
   resources :volunteers, :only => [:new, :create]
   
+  match "/activation/:id/:email/:activation_code", :to => "subscriber#activate"
+  
   scope "/blog" do
     resources :posts, :only => [:index, :show]
   end
