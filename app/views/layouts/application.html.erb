@@ -26,49 +26,18 @@
 	
 </head>
 <body>
-  
-  <div class="topbar">
-    <div class="headerimage">
-      <div class="cont">
-        <div id="logo" class="brand">John-Henry Liberty</div>
-      </div><!-- .container -->        
-    </div><!-- .fill -->
-  </div><!-- .topbar -->
-  
-  <!-- container -->
-	<div class="container">
-    <div class="contentwrapper">
-		  <div class="row">
-  			<div class="twelve columns">
-          <nav>
-            <%= link_to "Stay Informed", informed_path, :id => "informed", :class => "nice medium radius blue button" %>
-            <ul class="nav-bar">
-              <li><%= link_to "Home", root_path, :class => "main" %></li>
-              <li><%= link_to "About", about_path, :class => "main" %></li>
-              <li><%= link_to "Issues", issues_path, :class => "main" %></li>
-              <li><%= link_to "Volunteer", volunteer_path, :class => "main" %></li>
-              <li><%= link_to "Blog", blog_path, :class => "main" %></li>
-              <li><%= link_to "Contact", contact_path, :class => "main" %></li>
-            </ul>
-            <%= link_to "Contribute", "#", :id => "contribute", :class => "nice medium radius red button" %>
-          </nav>
-  				<hr />
-  			</div>
-  		</div>
-      <% if notice %>
-         <div class="alert alert-success fade in" data-alert="alert">
-           <a class="close" data-dismiss='alert' href="#">×</a>
-           <p><%= notice %></p>
-         </div>
-       <% end %>
-  <%= yield %>
-  <%= debug(params) if Rails.env.development? %>
-    </div> <!-- .contentwrapper -->
-  </div> <!-- .container -->
 
-  <footer>
-    <p>John-Henry Liberty for Congress '12</p>
-  </footer>
+<div id="container">
+  <div id="header">
+    
+    <div id="logo">
+      <%= image_tag("logo.jpg") %>
+    </div>
+    
+  </div>
+
+  <%= yield %>
+</div>
 
 </body>
 </html>
