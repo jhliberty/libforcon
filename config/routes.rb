@@ -6,6 +6,8 @@ Liberty::Application.routes.draw do
   match "/volunteer", :to => "volunteers#new", :as => "volunteer"
   match "/blog", :to => "posts#index", :as => "blog"  
   match "/stay-informed", :to => "subscribers#new", :as => "informed"
+  
+  match "/act-now", :to => "subscribers#new", :as => "act"
 
   resources :subscribers, :only => [:new, :create]   
   resources :contacts, :only => [:new, :create]
