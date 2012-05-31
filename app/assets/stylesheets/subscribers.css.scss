@@ -1,3 +1,98 @@
 // Place all the styles related to the subscribers controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+#subscriber-form {
+  width:560px;
+  margin: 0 auto;
+}
+
+fieldset {
+	margin: 0;
+	border: 0;
+	padding: 0;
+}
+
+#subscriber-form label {
+  display:block;
+}
+
+#subscriber-form input{
+  display:block;
+  margin-top:3px;
+  // border
+}
+
+form label.field-first,
+form label.field-address,
+form label.field-city,
+form label.field-email {
+	clear: left;
+}
+
+form label.field-first input,
+form label.field-last input,
+form label.field-email input,
+form label.field-phone input {
+	float: left;
+	width: 250px;
+	padding: 0px;
+}
+
+
+
+form label.field-first,
+form label.field-last,
+form label.field-email,
+form label.field-phone {
+	float: left;
+	margin: 0px 10px 0px 0px;
+	width: 250px;
+}
+
+form label.field-city {
+  float: left;
+	margin: 0px 10px 0px 0px;
+	width: 300px;
+}
+
+form label.field-city input {
+  float: left;
+	width: 300px;
+	padding: 0px;
+	margin-right:20px;
+}
+
+form label.field-state {
+	float: left;
+	margin-right: 10px;
+	width: 90px;
+}
+
+form label.field-state select {
+	width: 90px;
+	float: left;
+	margin-top: 3px;
+}
+
+form label.field-zip {
+	float: left;
+	width: 80px;
+}
+
+form label.field-zip input {
+	float: left;
+	width: 80px;
+}
+
+form label.field-address {
+	float: left;
+	width: 500px;
+	margin: 0px 0px 0px 0px;
+}
+
+form label.field-address input {
+	float: left;
+	width: 500px;
+	padding: 0px;
+}

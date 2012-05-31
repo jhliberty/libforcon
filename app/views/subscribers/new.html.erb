@@ -1,35 +1,49 @@
 <div class="row">
-  <div id="blog-content" class="seven columns panel">
-    <h2>Stay Informed</h2>
+  <div id="subscriber-form" class="seven columns panel">
+    <h2>Join The Fight For Liberty</h2>
+    
+    <p>Sign up to receive our newsletter and learn how you can be part of the revolution.</p> <br />
     
     <%= form_for @subscriber do |f| %>
     
-      <%= f.label :first_name %>
-      <%= f.text_field :first_name %>
+      <div id="first-form-group">
+        
+        <label for="subscriber_first_name" class="field-first">First Name &#42;
+          <%= f.text_field :first_name %>
+        </label>
+        
+        <label for="subscriber_last_name" class="field-last">Last Name &#42; 
+          <%= f.text_field :last_name %>
+        </label>
+      </div>
       
-      <%= f.label :last_name %>
-      <%= f.text_field :last_name %>
+      <label for="subscriber_address" class="field-address">Address &#42;
+        <%= f.text_field :address%>
+        <%= f.text_field :address_two %>
+      </label>
       
-      <%= f.label :address %>
-      <%= f.text_field :address%>
-      <%= f.text_field :address_two %>
+      <label for="subscriber_city" class="field-city">City &#42;
+        <%= f.text_field :city %>
+      </label>
       
-      <%= f.label :city %>
-      <%= f.text_field :city %>
+      <label for="subscriber_state" class="field-state">State &#42;
+        <%= f.select :state, us_states %>
+      </label>
       
-      <%= f.label :state %>
-      <%= f.select :state, us_states %>
+      <label for="subscriber_zip" class="field-zip">Zip &#42;
+        <%= f.text_field :zip %>
+      </label>
       
-      <%= f.label :zip %>
-      <%= f.text_field :zip %>
+      <label for="subscriber_email" class="field-email">Email &#42;
+        <%= f.text_field :email %>
+      </label>
       
-      <%= f.label :email %>
-      <%= f.text_field :email %>
-      
-      <%= f.label :phone %>
-      <%= f.text_field :phone %>  
-      
-      <%= f.submit "Subscribe "%>
+      <label for="subscriber_phone" class="field-phone">Phone &#42;
+        <%= f.text_field :phone %>  
+      </label>
+      <div>
+        <%= f.submit "Join The Cause! "%>
+      </div>
     <% end %>
     
   </div>
